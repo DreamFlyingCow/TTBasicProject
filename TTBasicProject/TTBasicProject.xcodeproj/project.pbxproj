@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31496C41AEC5B72FB2EA9282 /* libPods-TTBasicProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */; };
 		8203DDED1D73D47200B3B7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDD81D73D47200B3B7F6 /* ViewController.m */; };
 		8203DDEF1D73D47200B3B7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE81D73D47200B3B7F6 /* Assets.xcassets */; };
 		8203DDF01D73D47200B3B7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE91D73D47200B3B7F6 /* LaunchScreen.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17E62C14ABDB34F8B9B8D171 /* Pods-TTBasicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8203DDAC1D73CFA100B3B7F6 /* TTBasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTBasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8203DDD71D73D47200B3B7F6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8203DDD81D73D47200B3B7F6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -27,6 +29,8 @@
 		8203DDFF1D73D63E00B3B7F6 /* TTBasicProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBasicProject.pch; sourceTree = "<group>"; };
 		8203DE001D73D72400B3B7F6 /* Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
 		8203DE011D73D76000B3B7F6 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.release.xcconfig"; sourceTree = "<group>"; };
+		979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTBasicProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31496C41AEC5B72FB2EA9282 /* libPods-TTBasicProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E3971FCAE6BCE4E442FD38F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8203DDA31D73CFA100B3B7F6 = {
 			isa = PBXGroup;
 			children = (
 				8203DDAE1D73CFA100B3B7F6 /* TTBasicProject */,
 				8203DDAD1D73CFA100B3B7F6 /* Products */,
+				F1F28EB8471DA9F1C748BC16 /* Pods */,
+				3E3971FCAE6BCE4E442FD38F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -330,6 +345,15 @@
 			path = Third;
 			sourceTree = "<group>";
 		};
+		F1F28EB8471DA9F1C748BC16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17E62C14ABDB34F8B9B8D171 /* Pods-TTBasicProject.debug.xcconfig */,
+				833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,9 +361,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8203DDC31D73CFA100B3B7F6 /* Build configuration list for PBXNativeTarget "TTBasicProject" */;
 			buildPhases = (
+				EC67723F2B53470FEBB600A6 /* [CP] Check Pods Manifest.lock */,
 				8203DDA81D73CFA100B3B7F6 /* Sources */,
 				8203DDA91D73CFA100B3B7F6 /* Frameworks */,
 				8203DDAA1D73CFA100B3B7F6 /* Resources */,
+				32DD86E057066E2EB881507C /* [CP] Embed Pods Frameworks */,
+				C47313EF97E91A80BCDD096D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,6 +420,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32DD86E057066E2EB881507C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C47313EF97E91A80BCDD096D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC67723F2B53470FEBB600A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8203DDA81D73CFA100B3B7F6 /* Sources */ = {
@@ -503,6 +578,7 @@
 		};
 		8203DDC41D73CFA100B3B7F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E62C14ABDB34F8B9B8D171 /* Pods-TTBasicProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TTBasicProject/Other/TTBasicProject.pch";
@@ -516,6 +592,7 @@
 		};
 		8203DDC51D73CFA100B3B7F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TTBasicProject/Other/TTBasicProject.pch";
