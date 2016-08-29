@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8203DDB11D73CFA100B3B7F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDB01D73CFA100B3B7F6 /* main.m */; };
-		8203DDB41D73CFA100B3B7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDB31D73CFA100B3B7F6 /* AppDelegate.m */; };
-		8203DDB71D73CFA100B3B7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDB61D73CFA100B3B7F6 /* ViewController.m */; };
-		8203DDBA1D73CFA100B3B7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDB81D73CFA100B3B7F6 /* Main.storyboard */; };
-		8203DDBC1D73CFA100B3B7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDBB1D73CFA100B3B7F6 /* Assets.xcassets */; };
-		8203DDBF1D73CFA100B3B7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDBD1D73CFA100B3B7F6 /* LaunchScreen.storyboard */; };
+		8203DDED1D73D47200B3B7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDD81D73D47200B3B7F6 /* ViewController.m */; };
+		8203DDEF1D73D47200B3B7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE81D73D47200B3B7F6 /* Assets.xcassets */; };
+		8203DDF01D73D47200B3B7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE91D73D47200B3B7F6 /* LaunchScreen.storyboard */; };
+		8203DDF21D73D47200B3B7F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDEC1D73D47200B3B7F6 /* main.m */; };
+		8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDF81D73D55C00B3B7F6 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8203DDAC1D73CFA100B3B7F6 /* TTBasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTBasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8203DDB01D73CFA100B3B7F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8203DDB21D73CFA100B3B7F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8203DDB31D73CFA100B3B7F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8203DDB51D73CFA100B3B7F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8203DDB61D73CFA100B3B7F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8203DDB91D73CFA100B3B7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8203DDBB1D73CFA100B3B7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8203DDBE1D73CFA100B3B7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8203DDC01D73CFA100B3B7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8203DDD71D73D47200B3B7F6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8203DDD81D73D47200B3B7F6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8203DDE81D73D47200B3B7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8203DDEA1D73D47200B3B7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8203DDEC1D73D47200B3B7F6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8203DDF61D73D4F400B3B7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8203DDF71D73D55C00B3B7F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8203DDF81D73D55C00B3B7F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8203DDFF1D73D63E00B3B7F6 /* TTBasicProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBasicProject.pch; sourceTree = "<group>"; };
+		8203DE001D73D72400B3B7F6 /* Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
+		8203DE011D73D76000B3B7F6 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,25 +59,275 @@
 		8203DDAE1D73CFA100B3B7F6 /* TTBasicProject */ = {
 			isa = PBXGroup;
 			children = (
-				8203DDB21D73CFA100B3B7F6 /* AppDelegate.h */,
-				8203DDB31D73CFA100B3B7F6 /* AppDelegate.m */,
-				8203DDB51D73CFA100B3B7F6 /* ViewController.h */,
-				8203DDB61D73CFA100B3B7F6 /* ViewController.m */,
-				8203DDB81D73CFA100B3B7F6 /* Main.storyboard */,
-				8203DDBB1D73CFA100B3B7F6 /* Assets.xcassets */,
-				8203DDBD1D73CFA100B3B7F6 /* LaunchScreen.storyboard */,
-				8203DDC01D73CFA100B3B7F6 /* Info.plist */,
-				8203DDAF1D73CFA100B3B7F6 /* Supporting Files */,
+				8203DDC61D73D47200B3B7F6 /* Classes */,
+				8203DDE71D73D47200B3B7F6 /* Other */,
 			);
 			path = TTBasicProject;
 			sourceTree = "<group>";
 		};
-		8203DDAF1D73CFA100B3B7F6 /* Supporting Files */ = {
+		8203DDC61D73D47200B3B7F6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8203DDB01D73CFA100B3B7F6 /* main.m */,
+				8203DDFE1D73D61E00B3B7F6 /* Third */,
+				8203DDFC1D73D5C200B3B7F6 /* Define */,
+				8203DDFD1D73D5C200B3B7F6 /* Extensions */,
+				8203DDC71D73D47200B3B7F6 /* Base */,
+				8203DDCC1D73D47200B3B7F6 /* FirstPage */,
+				8203DDD11D73D47200B3B7F6 /* ForthPage */,
+				8203DDD61D73D47200B3B7F6 /* Other */,
+				8203DDD91D73D47200B3B7F6 /* Public */,
+				8203DDDC1D73D47200B3B7F6 /* SecondPage */,
+				8203DDE11D73D47200B3B7F6 /* ThirdPage */,
 			);
-			name = "Supporting Files";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8203DDC71D73D47200B3B7F6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDC81D73D47200B3B7F6 /* Controller */,
+				8203DDC91D73D47200B3B7F6 /* Model */,
+				8203DDCA1D73D47200B3B7F6 /* Other */,
+				8203DDCB1D73D47200B3B7F6 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8203DDC81D73D47200B3B7F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8203DDC91D73D47200B3B7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8203DDCA1D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDCB1D73D47200B3B7F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8203DDCC1D73D47200B3B7F6 /* FirstPage */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDCD1D73D47200B3B7F6 /* Controller */,
+				8203DDCE1D73D47200B3B7F6 /* Model */,
+				8203DDCF1D73D47200B3B7F6 /* Other */,
+				8203DDD01D73D47200B3B7F6 /* View */,
+			);
+			path = FirstPage;
+			sourceTree = "<group>";
+		};
+		8203DDCD1D73D47200B3B7F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8203DDCE1D73D47200B3B7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8203DDCF1D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDD01D73D47200B3B7F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8203DDD11D73D47200B3B7F6 /* ForthPage */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDD21D73D47200B3B7F6 /* Controller */,
+				8203DDD31D73D47200B3B7F6 /* Model */,
+				8203DDD41D73D47200B3B7F6 /* Other */,
+				8203DDD51D73D47200B3B7F6 /* View */,
+			);
+			path = ForthPage;
+			sourceTree = "<group>";
+		};
+		8203DDD21D73D47200B3B7F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8203DDD31D73D47200B3B7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8203DDD41D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDD51D73D47200B3B7F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8203DDD61D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDD71D73D47200B3B7F6 /* ViewController.h */,
+				8203DDD81D73D47200B3B7F6 /* ViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDD91D73D47200B3B7F6 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		8203DDDC1D73D47200B3B7F6 /* SecondPage */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDDD1D73D47200B3B7F6 /* Controller */,
+				8203DDDE1D73D47200B3B7F6 /* Model */,
+				8203DDDF1D73D47200B3B7F6 /* Other */,
+				8203DDE01D73D47200B3B7F6 /* View */,
+			);
+			path = SecondPage;
+			sourceTree = "<group>";
+		};
+		8203DDDD1D73D47200B3B7F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8203DDDE1D73D47200B3B7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8203DDDF1D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDE01D73D47200B3B7F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8203DDE11D73D47200B3B7F6 /* ThirdPage */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDE21D73D47200B3B7F6 /* Controller */,
+				8203DDE31D73D47200B3B7F6 /* Model */,
+				8203DDE41D73D47200B3B7F6 /* Other */,
+				8203DDE51D73D47200B3B7F6 /* View */,
+			);
+			path = ThirdPage;
+			sourceTree = "<group>";
+		};
+		8203DDE21D73D47200B3B7F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8203DDE31D73D47200B3B7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8203DDE41D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDE51D73D47200B3B7F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8203DDE71D73D47200B3B7F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8203DDE81D73D47200B3B7F6 /* Assets.xcassets */,
+				8203DDE91D73D47200B3B7F6 /* LaunchScreen.storyboard */,
+				8203DDEC1D73D47200B3B7F6 /* main.m */,
+				8203DDF61D73D4F400B3B7F6 /* Info.plist */,
+				8203DDF71D73D55C00B3B7F6 /* AppDelegate.h */,
+				8203DDF81D73D55C00B3B7F6 /* AppDelegate.m */,
+				8203DDFF1D73D63E00B3B7F6 /* TTBasicProject.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8203DDFC1D73D5C200B3B7F6 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				8203DE001D73D72400B3B7F6 /* Frame.h */,
+				8203DE011D73D76000B3B7F6 /* Color.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		8203DDFD1D73D5C200B3B7F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8203DDFE1D73D61E00B3B7F6 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +387,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8203DDBF1D73CFA100B3B7F6 /* LaunchScreen.storyboard in Resources */,
-				8203DDBC1D73CFA100B3B7F6 /* Assets.xcassets in Resources */,
-				8203DDBA1D73CFA100B3B7F6 /* Main.storyboard in Resources */,
+				8203DDEF1D73D47200B3B7F6 /* Assets.xcassets in Resources */,
+				8203DDF01D73D47200B3B7F6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,27 +399,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8203DDB71D73CFA100B3B7F6 /* ViewController.m in Sources */,
-				8203DDB41D73CFA100B3B7F6 /* AppDelegate.m in Sources */,
-				8203DDB11D73CFA100B3B7F6 /* main.m in Sources */,
+				8203DDF21D73D47200B3B7F6 /* main.m in Sources */,
+				8203DDED1D73D47200B3B7F6 /* ViewController.m in Sources */,
+				8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8203DDB81D73CFA100B3B7F6 /* Main.storyboard */ = {
+		8203DDE91D73D47200B3B7F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8203DDB91D73CFA100B3B7F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8203DDBD1D73CFA100B3B7F6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8203DDBE1D73CFA100B3B7F6 /* Base */,
+				8203DDEA1D73D47200B3B7F6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -263,7 +505,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TTBasicProject/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TTBasicProject/Other/TTBasicProject.pch";
+				INFOPLIST_FILE = TTBasicProject/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.sm.TTBasicProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +518,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TTBasicProject/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TTBasicProject/Other/TTBasicProject.pch";
+				INFOPLIST_FILE = TTBasicProject/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.sm.TTBasicProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +546,7 @@
 				8203DDC51D73CFA100B3B7F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

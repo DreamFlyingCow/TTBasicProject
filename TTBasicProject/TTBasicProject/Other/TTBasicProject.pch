@@ -1,0 +1,20 @@
+//
+//  TTBasicProject.pch
+//  TTBasicProject
+//
+//  Created by 赵春浩 on 16/8/29.
+//  Copyright © 2016年 Mr Zhao. All rights reserved.
+//
+
+#ifndef TTBasicProject_pch
+#define TTBasicProject_pch
+
+
+#import "Frame.h"
+#import "Color.h"
+
+
+
+
+
+#endif /* TTBasicProject_pch */
