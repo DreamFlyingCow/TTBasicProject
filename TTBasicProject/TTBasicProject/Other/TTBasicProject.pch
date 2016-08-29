@@ -9,12 +9,19 @@
 #ifndef TTBasicProject_pch
 #define TTBasicProject_pch
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AppDelegate.h"
+#import "BaseViewController.h"
 
 #import "Frame.h"
 #import "Color.h"
+#import "MJRefresh.h"
+
+
+#import "UIViewExt.h"
 
 
 
-
-
-#endif /* TTBasicProject_pch */
+#endif 

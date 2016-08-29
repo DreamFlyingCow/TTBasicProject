@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		31496C41AEC5B72FB2EA9282 /* libPods-TTBasicProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */; };
-		8203DDED1D73D47200B3B7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDD81D73D47200B3B7F6 /* ViewController.m */; };
 		8203DDEF1D73D47200B3B7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE81D73D47200B3B7F6 /* Assets.xcassets */; };
 		8203DDF01D73D47200B3B7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE91D73D47200B3B7F6 /* LaunchScreen.storyboard */; };
 		8203DDF21D73D47200B3B7F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDEC1D73D47200B3B7F6 /* main.m */; };
 		8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDF81D73D55C00B3B7F6 /* AppDelegate.m */; };
+		8203DE091D742F3C00B3B7F6 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE081D742F3C00B3B7F6 /* UIViewExt.m */; };
+		8203DE121D742FDC00B3B7F6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE0B1D742FDC00B3B7F6 /* BaseNavigationController.m */; };
+		8203DE131D742FDC00B3B7F6 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE0D1D742FDC00B3B7F6 /* BaseTabBarController.m */; };
+		8203DE141D742FDC00B3B7F6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE0F1D742FDC00B3B7F6 /* BaseViewController.m */; };
+		8203DE151D742FDC00B3B7F6 /* TTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE111D742FDC00B3B7F6 /* TTTabBarViewController.m */; };
+		8203DE181D743A2600B3B7F6 /* TTFirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE171D743A2600B3B7F6 /* TTFirstPageViewController.m */; };
+		8203DE1B1D743A5600B3B7F6 /* TTSecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE1A1D743A5600B3B7F6 /* TTSecondPageViewController.m */; };
+		8203DE1E1D743A6500B3B7F6 /* TTThirdPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE1D1D743A6500B3B7F6 /* TTThirdPageViewController.m */; };
+		8203DE211D743A7B00B3B7F6 /* TTForthPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE201D743A7B00B3B7F6 /* TTForthPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17E62C14ABDB34F8B9B8D171 /* Pods-TTBasicProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8203DDAC1D73CFA100B3B7F6 /* TTBasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTBasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8203DDD71D73D47200B3B7F6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8203DDD81D73D47200B3B7F6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8203DDE81D73D47200B3B7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8203DDEA1D73D47200B3B7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8203DDEC1D73D47200B3B7F6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -29,6 +35,24 @@
 		8203DDFF1D73D63E00B3B7F6 /* TTBasicProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBasicProject.pch; sourceTree = "<group>"; };
 		8203DE001D73D72400B3B7F6 /* Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
 		8203DE011D73D76000B3B7F6 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		8203DE071D742F3C00B3B7F6 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		8203DE081D742F3C00B3B7F6 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		8203DE0A1D742FDC00B3B7F6 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		8203DE0B1D742FDC00B3B7F6 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8203DE0C1D742FDC00B3B7F6 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		8203DE0D1D742FDC00B3B7F6 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		8203DE0E1D742FDC00B3B7F6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8203DE0F1D742FDC00B3B7F6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8203DE101D742FDC00B3B7F6 /* TTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarViewController.h; sourceTree = "<group>"; };
+		8203DE111D742FDC00B3B7F6 /* TTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarViewController.m; sourceTree = "<group>"; };
+		8203DE161D743A2600B3B7F6 /* TTFirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFirstPageViewController.h; sourceTree = "<group>"; };
+		8203DE171D743A2600B3B7F6 /* TTFirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFirstPageViewController.m; sourceTree = "<group>"; };
+		8203DE191D743A5600B3B7F6 /* TTSecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSecondPageViewController.h; sourceTree = "<group>"; };
+		8203DE1A1D743A5600B3B7F6 /* TTSecondPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSecondPageViewController.m; sourceTree = "<group>"; };
+		8203DE1C1D743A6500B3B7F6 /* TTThirdPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThirdPageViewController.h; sourceTree = "<group>"; };
+		8203DE1D1D743A6500B3B7F6 /* TTThirdPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTThirdPageViewController.m; sourceTree = "<group>"; };
+		8203DE1F1D743A7B00B3B7F6 /* TTForthPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTForthPageViewController.h; sourceTree = "<group>"; };
+		8203DE201D743A7B00B3B7F6 /* TTForthPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTForthPageViewController.m; sourceTree = "<group>"; };
 		833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.release.xcconfig"; sourceTree = "<group>"; };
 		979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTBasicProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,6 +136,14 @@
 		8203DDC81D73D47200B3B7F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8203DE0A1D742FDC00B3B7F6 /* BaseNavigationController.h */,
+				8203DE0B1D742FDC00B3B7F6 /* BaseNavigationController.m */,
+				8203DE0C1D742FDC00B3B7F6 /* BaseTabBarController.h */,
+				8203DE0D1D742FDC00B3B7F6 /* BaseTabBarController.m */,
+				8203DE0E1D742FDC00B3B7F6 /* BaseViewController.h */,
+				8203DE0F1D742FDC00B3B7F6 /* BaseViewController.m */,
+				8203DE101D742FDC00B3B7F6 /* TTTabBarViewController.h */,
+				8203DE111D742FDC00B3B7F6 /* TTTabBarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +183,8 @@
 		8203DDCD1D73D47200B3B7F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8203DE161D743A2600B3B7F6 /* TTFirstPageViewController.h */,
+				8203DE171D743A2600B3B7F6 /* TTFirstPageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +224,8 @@
 		8203DDD21D73D47200B3B7F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8203DE1F1D743A7B00B3B7F6 /* TTForthPageViewController.h */,
+				8203DE201D743A7B00B3B7F6 /* TTForthPageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,8 +254,6 @@
 		8203DDD61D73D47200B3B7F6 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8203DDD71D73D47200B3B7F6 /* ViewController.h */,
-				8203DDD81D73D47200B3B7F6 /* ViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -245,6 +279,8 @@
 		8203DDDD1D73D47200B3B7F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8203DE191D743A5600B3B7F6 /* TTSecondPageViewController.h */,
+				8203DE1A1D743A5600B3B7F6 /* TTSecondPageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +320,8 @@
 		8203DDE21D73D47200B3B7F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8203DE1C1D743A6500B3B7F6 /* TTThirdPageViewController.h */,
+				8203DE1D1D743A6500B3B7F6 /* TTThirdPageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,6 +373,8 @@
 		8203DDFD1D73D5C200B3B7F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8203DE071D742F3C00B3B7F6 /* UIViewExt.h */,
+				8203DE081D742F3C00B3B7F6 /* UIViewExt.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +463,7 @@
 		8203DDA41D73CFA100B3B7F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TT;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Mr Zhao";
 				TargetAttributes = {
@@ -514,9 +555,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8203DE091D742F3C00B3B7F6 /* UIViewExt.m in Sources */,
 				8203DDF21D73D47200B3B7F6 /* main.m in Sources */,
-				8203DDED1D73D47200B3B7F6 /* ViewController.m in Sources */,
+				8203DE181D743A2600B3B7F6 /* TTFirstPageViewController.m in Sources */,
 				8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */,
+				8203DE211D743A7B00B3B7F6 /* TTForthPageViewController.m in Sources */,
+				8203DE1B1D743A5600B3B7F6 /* TTSecondPageViewController.m in Sources */,
+				8203DE1E1D743A6500B3B7F6 /* TTThirdPageViewController.m in Sources */,
+				8203DE131D742FDC00B3B7F6 /* BaseTabBarController.m in Sources */,
+				8203DE141D742FDC00B3B7F6 /* BaseViewController.m in Sources */,
+				8203DE151D742FDC00B3B7F6 /* TTTabBarViewController.m in Sources */,
+				8203DE121D742FDC00B3B7F6 /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
