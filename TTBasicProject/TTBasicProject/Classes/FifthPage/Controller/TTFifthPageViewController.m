@@ -1,25 +1,27 @@
 //
-//  TTSecondPageViewController.m
+//  TTFifthPageViewController.m
 //  TTBasicProject
 //
-//  Created by 赵春浩 on 16/8/29.
+//  Created by 赵春浩 on 16/9/18.
 //  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
-#import "TTSecondPageViewController.h"
+#import "TTFifthPageViewController.h"
 
-@interface TTSecondPageViewController ()
+@interface TTFifthPageViewController ()
+
+
 
 @end
 
-@implementation TTSecondPageViewController
+@implementation TTFifthPageViewController
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     self.view.backgroundColor = kRandomColor;
-    
 }
+
 
 
 
@@ -29,6 +31,7 @@
     
     [super didReceiveMemoryWarning];
 }
+
 
 
 @end

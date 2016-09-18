@@ -13,6 +13,7 @@
 #import "TTSecondPageViewController.h"
 #import "TTThirdPageViewController.h"
 #import "TTForthPageViewController.h"
+#import "TTFifthPageViewController.h"
 
 @interface TTTabBarViewController : BaseTabBarController
 @property (nonatomic ,strong) UILabel *msgMarkLab;
@@ -23,12 +24,14 @@
 @property (strong, nonatomic) BaseNavigationController *secondNav;
 @property (strong, nonatomic) BaseNavigationController *thirdNav;
 @property (strong, nonatomic) BaseNavigationController *forthNav;
+@property (strong, nonatomic) BaseNavigationController *fifthNav;
 
 
 @property (strong, nonatomic) TTFirstPageViewController *firstVC;
 @property (strong, nonatomic) TTSecondPageViewController *secondVC;
 @property (strong, nonatomic) TTThirdPageViewController *thirdVC;
 @property (strong, nonatomic) TTForthPageViewController *forthVC;
+@property (strong, nonatomic) TTFifthPageViewController *fifthVC;
 
 
 
