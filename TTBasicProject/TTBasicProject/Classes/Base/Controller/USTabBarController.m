@@ -1,9 +1,9 @@
 //
 //  USTabBarController.m
-//  UnicornSeller
+//  TTBasicProject
 //
-//  Created by joybar on 16/9/5.
-//  Copyright © 2016年 Unicorn. All rights reserved.
+//  Created by 赵春浩 on 16/8/29.
+//  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
 #import "USTabBarController.h"

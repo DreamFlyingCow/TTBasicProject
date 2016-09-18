@@ -1,9 +1,9 @@
 //
 //  UIImage+Image.m
-//  BuDeJie
+//  TTBasicProject
 //
-//  Created by xiaomage on 16/3/11.
-//  Copyright © 2016年 小码哥. All rights reserved.
+//  Created by 赵春浩 on 16/8/29.
+//  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
 #import "UIImage+Image.h"

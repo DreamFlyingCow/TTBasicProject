@@ -32,7 +32,7 @@
     
     NSLog(@"这是第四个控制器");
     
-    [[TTHUDView sharedHUDView] hudShow];
+    [self.view hudShow];
     
 }
 

@@ -12,7 +12,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <IQKeyboardManager.h>
-
+#import <MBProgressHUD.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 
 #import "AppDelegate.h"
 #import "BaseViewController.h"
@@ -24,12 +25,13 @@
 #import "TTHUDView.h"
 
 
+#import "UIView+TTHUDView.h"
 
 
 
-/**
- *  NSLog
- */
+
+
+// NSLog格式化
 #if DEBUG
 #define NSLog(FORMAT, ...) fprintf(stderr,"function:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else

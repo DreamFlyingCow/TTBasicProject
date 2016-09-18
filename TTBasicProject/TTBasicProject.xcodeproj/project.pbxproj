@@ -28,6 +28,9 @@
 		82F183921D8E437C00CF8D7C /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183911D8E437C00CF8D7C /* UIImage+Image.m */; };
 		82F183951D8E44A700CF8D7C /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183941D8E44A700CF8D7C /* UIBarButtonItem+Item.m */; };
 		82F183981D8E6C2100CF8D7C /* TTHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183971D8E6C2100CF8D7C /* TTHUDView.m */; };
+		82F1839B1D8E87F800CF8D7C /* TTRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F1839A1D8E87F800CF8D7C /* TTRefreshGifHeader.m */; };
+		82F1839E1D8EA10E00CF8D7C /* UIView+TTHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F1839D1D8EA10E00CF8D7C /* UIView+TTHUDView.m */; };
+		82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183A01D8EA6F200CF8D7C /* UIView+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,12 @@
 		82F183941D8E44A700CF8D7C /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 		82F183961D8E6C2100CF8D7C /* TTHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHUDView.h; sourceTree = "<group>"; };
 		82F183971D8E6C2100CF8D7C /* TTHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHUDView.m; sourceTree = "<group>"; };
+		82F183991D8E87F800CF8D7C /* TTRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRefreshGifHeader.h; sourceTree = "<group>"; };
+		82F1839A1D8E87F800CF8D7C /* TTRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRefreshGifHeader.m; sourceTree = "<group>"; };
+		82F1839C1D8EA10E00CF8D7C /* UIView+TTHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTHUDView.h"; sourceTree = "<group>"; };
+		82F1839D1D8EA10E00CF8D7C /* UIView+TTHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTHUDView.m"; sourceTree = "<group>"; };
+		82F1839F1D8EA6F200CF8D7C /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		82F183A01D8EA6F200CF8D7C /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.release.xcconfig"; sourceTree = "<group>"; };
 		979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTBasicProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,6 +229,10 @@
 				82F183911D8E437C00CF8D7C /* UIImage+Image.m */,
 				82F1834D1D8E38C200CF8D7C /* UIViewExt.h */,
 				82F1834E1D8E38C200CF8D7C /* UIViewExt.m */,
+				82F1839C1D8EA10E00CF8D7C /* UIView+TTHUDView.h */,
+				82F1839D1D8EA10E00CF8D7C /* UIView+TTHUDView.m */,
+				82F1839F1D8EA6F200CF8D7C /* UIView+Image.h */,
+				82F183A01D8EA6F200CF8D7C /* UIView+Image.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -407,6 +420,8 @@
 			children = (
 				82F183961D8E6C2100CF8D7C /* TTHUDView.h */,
 				82F183971D8E6C2100CF8D7C /* TTHUDView.m */,
+				82F183991D8E87F800CF8D7C /* TTRefreshGifHeader.h */,
+				82F1839A1D8E87F800CF8D7C /* TTRefreshGifHeader.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -638,14 +653,17 @@
 				82F1837D1D8E38C200CF8D7C /* BaseViewController.m in Sources */,
 				82F1838E1D8E42D200CF8D7C /* USNavigationViewController.m in Sources */,
 				82F183821D8E38C200CF8D7C /* TTSecondPageViewController.m in Sources */,
+				82F1839B1D8E87F800CF8D7C /* TTRefreshGifHeader.m in Sources */,
 				82F183981D8E6C2100CF8D7C /* TTHUDView.m in Sources */,
 				82F183831D8E38C200CF8D7C /* TTThirdPageViewController.m in Sources */,
 				82F183951D8E44A700CF8D7C /* UIBarButtonItem+Item.m in Sources */,
 				82F183921D8E437C00CF8D7C /* UIImage+Image.m in Sources */,
+				82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */,
 				82F1837E1D8E38C200CF8D7C /* TTTabBarViewController.m in Sources */,
 				8203DDF21D73D47200B3B7F6 /* main.m in Sources */,
 				8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */,
 				82F1837B1D8E38C200CF8D7C /* BaseNavigationController.m in Sources */,
+				82F1839E1D8EA10E00CF8D7C /* UIView+TTHUDView.m in Sources */,
 				82F1838F1D8E42D200CF8D7C /* USTabBarController.m in Sources */,
 				82F183861D8E39BE00CF8D7C /* TTFifthPageViewController.m in Sources */,
 			);

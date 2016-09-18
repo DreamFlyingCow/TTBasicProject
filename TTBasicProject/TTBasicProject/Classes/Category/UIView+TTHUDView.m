@@ -1,82 +1,83 @@
 //
-//  TTHUDView.m
+//  UIView+TTHUDView.m
 //  TTBasicProject
 //
 //  Created by 赵春浩 on 16/9/18.
 //  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
-#import "TTHUDView.h"
-
-#define kKeyWindow [UIApplication sharedApplication].keyWindow
-static id _instance;
-@interface TTHUDView ()<MBProgressHUDDelegate>
-
-@end
+#import "UIView+TTHUDView.h"
 
 
-@implementation TTHUDView {
+static MBProgressHUD *_HUD;
+static MBProgressHUD *_textHUD;
+@implementation UIView (TTHUDView)
+
+
+// setter
+- (void)setHUD:(MBProgressHUD *)HUD {
     
-    MBProgressHUD *HUD;
-    MBProgressHUD *textHUD;
+    objc_setAssociatedObject(self, (__bridge const void *)(_HUD), HUD, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-//#pragma mark - 设置单例对象
-//+ (instancetype)sharedHUDView {
-//    
-//    if (_instance == nil) {
-//        static dispatch_once_t onceToken;
-//        dispatch_once(&onceToken, ^{
-//            _instance = [[TTHUDView alloc] init];
-//        });
-//    }
-//    return _instance;
-//}
+- (void)setTextHUD:(MBProgressHUD *)textHUD {
+    
+    objc_setAssociatedObject(self, (__bridge const void *)(_textHUD), textHUD, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+// getter
+- (MBProgressHUD *)HUD {
+    
+    return objc_getAssociatedObject(self, (__bridge const void *)(_HUD));
+}
+
+- (MBProgressHUD *)textHUD {
+    
+    return objc_getAssociatedObject(self, (__bridge const void *)(_textHUD));
+}
 
 
-
-#pragma mark -  HUD(工具类)
 - (void)hudShow {
     
-    if(HUD == nil) {
+    if(_HUD == nil) {
         
-        HUD = [[MBProgressHUD alloc] initWithView:self];
-        HUD.alpha = 0.4;
-        [self addSubview:HUD];
-        HUD.delegate = self;
-        HUD.labelText = @"加载中...";
+        _HUD = [[MBProgressHUD alloc] initWithView:self];
+        _HUD.alpha = 0.4;
+        [self addSubview:_HUD];
+        _HUD.delegate = self;
+        _HUD.labelText = @"加载中...";
     }
-    [HUD show:YES];
+    [_HUD show:YES];
 }
 
 - (void)hudShow:(NSString *)content {
     
-    if(textHUD == nil) {
+    if(_textHUD == nil) {
         
-        textHUD = [[MBProgressHUD alloc] initWithView:self];
-        [self addSubview:textHUD];
-        textHUD.delegate = self;
-        textHUD.labelText = content;
+        _textHUD = [[MBProgressHUD alloc] initWithView:self];
+        [self addSubview:_textHUD];
+        _textHUD.delegate = self;
+        _textHUD.labelText = content;
     }
-    [textHUD show:YES];
+    [_textHUD show:YES];
 }
 
 - (void)hiddleHud {
     
-    if (HUD != nil) {
+    if (_HUD != nil) {
         
-        [HUD removeFromSuperview];
-        HUD = nil;
+        [_HUD removeFromSuperview];
+        _HUD = nil;
     }
     
 }
 
 - (void)textHUDHiddle {
     
-    if (textHUD != nil) {
+    if (_textHUD != nil) {
         
-        [textHUD removeFromSuperview];
-        textHUD = nil;
+        [_textHUD removeFromSuperview];
+        _textHUD = nil;
     }
     
 }
@@ -117,8 +118,8 @@ static id _instance;
 #pragma mark MBProgressHUDDelegate methods
 - (void)hudWasHidden:(MBProgressHUD *)hud {
     
-    [HUD removeFromSuperview];
-    HUD = nil;
+    [_HUD removeFromSuperview];
+    _HUD = nil;
 }
 
 

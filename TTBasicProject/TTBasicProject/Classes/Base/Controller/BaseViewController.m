@@ -138,8 +138,8 @@
     [self.view addSubview:self.navView];
     //title
     UILabel *titleLab = [[UILabel alloc] init];
-    titleLab.center = CGPointMake(self.navView.center.x, self.navView.center.y+10);
-    titleLab.bounds = CGRectMake(0, 0, kScreenWidth/3, 44);
+    titleLab.center = CGPointMake(self.navView.center.x, self.navView.center.y + 10);
+    titleLab.bounds = CGRectMake(0, 0, kScreenWidth / 3, 44);
     titleLab.text = title;
     titleLab.backgroundColor = [UIColor clearColor];
     titleLab.textAlignment = NSTextAlignmentCenter;
@@ -166,18 +166,18 @@
     [self.view addSubview:self.navView];
     //title
     _titleLab = [[UILabel alloc] init];
-    _titleLab.center = CGPointMake(self.navView.center.x, self.navView.center.y+10);
-    _titleLab.bounds = CGRectMake(0, 0, kScreenWidth/3, 44);
+    _titleLab.center = CGPointMake(self.navView.center.x, self.navView.center.y + 10);
+    _titleLab.bounds = CGRectMake(0, 0, kScreenWidth / 3, 44);
     _titleLab.text = title;
     _titleLab.backgroundColor = [UIColor clearColor];
     _titleLab.textAlignment = NSTextAlignmentCenter;
     _titleLab.textColor = [UIColor whiteColor];
-    _titleLab.font =[UIFont systemFontOfSize:17];
+    _titleLab.font = [UIFont systemFontOfSize:17];
     _titleLab.shadowOffset = CGSizeMake(0, 1);
     [self.navView addSubview:_titleLab];
     
     _spinnerView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    _spinnerView.frame = CGRectMake(_titleLab.left-8, self.navView.center.y-8, 37, 37);
+    _spinnerView.frame = CGRectMake(_titleLab.left - 8, self.navView.center.y - 8, 37, 37);
     [self.navView addSubview:_spinnerView];
     [_spinnerView startAnimating];
     
@@ -210,131 +210,43 @@
     [self.hudBgView removeFromSuperview];
 }
 
-#pragma mark -  HUD(工具类)
-- (void)hudShow {
-    
-    if(HUD == nil) {
-        
-        HUD = [[MBProgressHUD alloc] initWithView:self.view];
-        HUD.alpha = 0.4;
-        [self.view addSubview:HUD];
-        HUD.delegate = self;
-        HUD.labelText = @"加载中...";
-    }
-	[HUD show:YES];
-}
 
-- (void)hudShow:(NSString *)content {
-    
-    if(textHUD == nil) {
-        
-        textHUD = [[MBProgressHUD alloc] initWithView:self.view];
-        [self.view addSubview:textHUD];
-        textHUD.delegate = self;
-        textHUD.labelText = content;
-    }
-	[textHUD show:YES];
-}
-
-- (void)hiddleHud {
-    
-    if (HUD != nil) {
-        
-        [HUD removeFromSuperview];
-        HUD = nil;
-    }
-    
-}
-
-- (void)textHUDHiddle {
-    
-    if (textHUD != nil) {
-       
-        [textHUD removeFromSuperview];
-        
-        textHUD = nil;
-    }
-    
-}
-
-- (void)hudShowWithText:(NSString *)text {
-    
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    // Configure for text only and offset down
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = text;
-    hud.margin = 10.f;
-    hud.yOffset = kScreenHeight/2-100;
-    hud.removeFromSuperViewOnHide = YES;
-    [hud hide:YES afterDelay:0.8];
-}
-
-- (void)showHudSuccess:(NSString *)tip {
-    
-    [self showHud:tip andImg:@"TipViewIcon.png"];
-}
-
-- (void)showHudFailed:(NSString *)tip {
-    
-    [self showHud:tip andImg:@"TipViewErrorIcon.png"];
-}
-
-- (void)showHud:(NSString *)tip andImg:(NSString *)img {
-    
-    MBProgressHUD *t_HUD = [[MBProgressHUD alloc] initWithView:self.view];
-    [self.view addSubview:t_HUD];
-    t_HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:img]];
-    t_HUD.mode = MBProgressHUDModeCustomView;
-    t_HUD.labelText = tip;
-    t_HUD.removeFromSuperViewOnHide = YES;
-    [t_HUD show:YES];
-    [t_HUD hide:YES afterDelay:1];
-}
-
-#pragma mark MBProgressHUDDelegate methods
-- (void)hudWasHidden:(MBProgressHUD *)hud {
-    
-	// Remove HUD from screen when the HUD was hidded
-    [HUD removeFromSuperview];
-    HUD = nil;
-}
-
-#pragma mark - UserData (这一堆有什么用?????)
-- (void)storeUserData:(NSMutableDictionary *)store {
-    
-    [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"userInfo"];
-    [[NSUserDefaults standardUserDefaults]setObject:store forKey:@"userInfo"];
-}
-
-- (void)storeUserNameAndPassword:(NSMutableDictionary *)dic {
-    
-    [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"loginInfo"];
-    [[NSUserDefaults standardUserDefaults]setObject:dic forKey:@"loginInfo"];
-}
-
-- (NSDictionary *)getLoginInfo {
-    
-    NSDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"loginInfo"];
-    return dic;
-}
-
-- (NSMutableDictionary *)getInfoDic {
-    
-    NSMutableDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"userInfo"];
-    return dic;
-}
-
-#pragma mark - ASI (这一堆也是没有调用过....)
-- (NSString *)getAsiErrorInfo:(id)error {
-    
-    return @"网络似乎有问题,请检查网络";
-}
-
-- (NSString *)getasiCompeleteError:(id)result {
-    
-    NSString *str = [[result valueForKey:@"query"] valueForKey:@"reason"];
-    return str;
-}
+//#pragma mark - UserData (这一堆有什么用?????)
+//- (void)storeUserData:(NSMutableDictionary *)store {
+//    
+//    [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"userInfo"];
+//    [[NSUserDefaults standardUserDefaults]setObject:store forKey:@"userInfo"];
+//}
+//
+//- (void)storeUserNameAndPassword:(NSMutableDictionary *)dic {
+//    
+//    [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"loginInfo"];
+//    [[NSUserDefaults standardUserDefaults]setObject:dic forKey:@"loginInfo"];
+//}
+//
+//- (NSDictionary *)getLoginInfo {
+//    
+//    NSDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"loginInfo"];
+//    return dic;
+//}
+//
+//- (NSMutableDictionary *)getInfoDic {
+//    
+//    NSMutableDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"userInfo"];
+//    return dic;
+//}
+//
+//#pragma mark - ASI (这一堆也是没有调用过....)
+//- (NSString *)getAsiErrorInfo:(id)error {
+//    
+//    return @"网络似乎有问题,请检查网络";
+//}
+//
+//- (NSString *)getasiCompeleteError:(id)result {
+//    
+//    NSString *str = [[result valueForKey:@"query"] valueForKey:@"reason"];
+//    return str;
+//}
 
 
 @end
