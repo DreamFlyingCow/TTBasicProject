@@ -670,7 +670,7 @@
 			baseConfigurationReference = 17E62C14ABDB34F8B9B8D171 /* Pods-TTBasicProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TTBasicProject/Other/TTBasicProject.pch";
 				INFOPLIST_FILE = TTBasicProject/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -685,7 +685,7 @@
 			baseConfigurationReference = 833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TTBasicProject/Other/TTBasicProject.pch";
 				INFOPLIST_FILE = TTBasicProject/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

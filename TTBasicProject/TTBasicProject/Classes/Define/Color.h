@@ -14,12 +14,12 @@
 // 自定义三个参数
 #define     kCustomColor(r,g,b)                   [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
 // 自定义三个参数和透明度
-#define     kCustomColorAndAlpha(r,g,b,a)     [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define     kCustomColorAndAlpha(r,g,b,a)         [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
 
 // 传入一个6位数的颜色值和透明度
 #define    kColorRGBA(c,a)                        [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:a]
-// 只需要传入一个6位数的颜色值
+// 只需要传入一个6位数的颜色值(c: 0x000000)
 #define    kColorRGB(c)                           [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 
 

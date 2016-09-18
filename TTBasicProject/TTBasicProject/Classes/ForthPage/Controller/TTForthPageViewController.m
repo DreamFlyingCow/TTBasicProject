@@ -18,7 +18,27 @@
     
     [super viewDidLoad];
     self.view.backgroundColor = kRandomColor;
+    
+    UIButton *btn = [[UIButton alloc] init];
+    btn.size = CGSizeMake(50, 50);
+    btn.backgroundColor = kRandomColor;
+    [self.view addSubview:btn];
+    btn.center = self.view.center;
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    
 }
+
+- (void)btnClick:(UIButton *)btn {
+    
+    
+    NSLog(@"hah");
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
