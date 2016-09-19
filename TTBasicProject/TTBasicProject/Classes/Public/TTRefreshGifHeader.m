@@ -46,16 +46,14 @@
     
     TTRefreshGifHeader *header = [super headerWithRefreshingBlock:refreshingBlock];
     NSArray *images = [NSArray arrayWithObjects:[UIImage imageNamed:@"loading_3"], [UIImage imageNamed:@"loading_4"], [UIImage imageNamed:@"loading_5"], nil];
-    
+    // 设置下拉没有到临界点时的图片
     [header setImages:@[[UIImage imageNamed:@"loading_1"]] forState:MJRefreshStateIdle];
-
+    // 设置下拉超过临界点时的图片
     [header setImages:@[[UIImage imageNamed:@"loading_2"]] forState:MJRefreshStatePulling];
-
+    // 设置正在刷新时的图片
     [header setImages:images forState:MJRefreshStateRefreshing];
     
-    
     return header;
-    
 }
 
 

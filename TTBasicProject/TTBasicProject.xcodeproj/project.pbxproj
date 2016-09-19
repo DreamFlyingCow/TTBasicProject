@@ -31,6 +31,7 @@
 		82F1839B1D8E87F800CF8D7C /* TTRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F1839A1D8E87F800CF8D7C /* TTRefreshGifHeader.m */; };
 		82F1839E1D8EA10E00CF8D7C /* UIView+TTHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F1839D1D8EA10E00CF8D7C /* UIView+TTHUDView.m */; };
 		82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183A01D8EA6F200CF8D7C /* UIView+Image.m */; };
+		82FE12CE1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE12CD1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		82F1839D1D8EA10E00CF8D7C /* UIView+TTHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTHUDView.m"; sourceTree = "<group>"; };
 		82F1839F1D8EA6F200CF8D7C /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		82F183A01D8EA6F200CF8D7C /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		82FE12CC1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		82FE12CD1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRefreshBackGifFooter.m; sourceTree = "<group>"; };
 		833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.release.xcconfig"; sourceTree = "<group>"; };
 		979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTBasicProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -422,6 +425,8 @@
 				82F183971D8E6C2100CF8D7C /* TTHUDView.m */,
 				82F183991D8E87F800CF8D7C /* TTRefreshGifHeader.h */,
 				82F1839A1D8E87F800CF8D7C /* TTRefreshGifHeader.m */,
+				82FE12CC1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.h */,
+				82FE12CD1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -657,6 +662,7 @@
 				82F183981D8E6C2100CF8D7C /* TTHUDView.m in Sources */,
 				82F183831D8E38C200CF8D7C /* TTThirdPageViewController.m in Sources */,
 				82F183951D8E44A700CF8D7C /* UIBarButtonItem+Item.m in Sources */,
+				82FE12CE1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m in Sources */,
 				82F183921D8E437C00CF8D7C /* UIImage+Image.m in Sources */,
 				82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */,
 				82F1837E1D8E38C200CF8D7C /* TTTabBarViewController.m in Sources */,
