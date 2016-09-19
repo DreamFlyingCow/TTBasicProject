@@ -12,4 +12,5 @@ target 'TTBasicProject' do
   pod 'DZNEmptyDataSet'
   pod 'IQKeyboardManager'
   pod 'UITableView+FDTemplateLayoutCell_Bell', '~> 1.5.0'
+  pod 'Masonry', '~> 1.0.1'
 end

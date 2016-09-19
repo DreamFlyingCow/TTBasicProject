@@ -32,6 +32,8 @@
 		82F1839E1D8EA10E00CF8D7C /* UIView+TTHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F1839D1D8EA10E00CF8D7C /* UIView+TTHUDView.m */; };
 		82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183A01D8EA6F200CF8D7C /* UIView+Image.m */; };
 		82FE12CE1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE12CD1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m */; };
+		82FE12D11D8FD6E200BADB26 /* TTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE12D01D8FD6E200BADB26 /* TTAlertView.m */; };
+		82FE12D41D8FD85700BADB26 /* TTActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE12D31D8FD85700BADB26 /* TTActionSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,10 @@
 		82F183A01D8EA6F200CF8D7C /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		82FE12CC1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		82FE12CD1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		82FE12CF1D8FD6E200BADB26 /* TTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertView.h; sourceTree = "<group>"; };
+		82FE12D01D8FD6E200BADB26 /* TTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlertView.m; sourceTree = "<group>"; };
+		82FE12D21D8FD85700BADB26 /* TTActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActionSheet.h; sourceTree = "<group>"; };
+		82FE12D31D8FD85700BADB26 /* TTActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActionSheet.m; sourceTree = "<group>"; };
 		833E2D0E00057E879913AA66 /* Pods-TTBasicProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTBasicProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTBasicProject/Pods-TTBasicProject.release.xcconfig"; sourceTree = "<group>"; };
 		979EB038EB2F9A55500A2E56 /* libPods-TTBasicProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTBasicProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -427,6 +433,10 @@
 				82F1839A1D8E87F800CF8D7C /* TTRefreshGifHeader.m */,
 				82FE12CC1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.h */,
 				82FE12CD1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m */,
+				82FE12CF1D8FD6E200BADB26 /* TTAlertView.h */,
+				82FE12D01D8FD6E200BADB26 /* TTAlertView.m */,
+				82FE12D21D8FD85700BADB26 /* TTActionSheet.h */,
+				82FE12D31D8FD85700BADB26 /* TTActionSheet.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -666,8 +676,10 @@
 				82F183921D8E437C00CF8D7C /* UIImage+Image.m in Sources */,
 				82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */,
 				82F1837E1D8E38C200CF8D7C /* TTTabBarViewController.m in Sources */,
+				82FE12D11D8FD6E200BADB26 /* TTAlertView.m in Sources */,
 				8203DDF21D73D47200B3B7F6 /* main.m in Sources */,
 				8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */,
+				82FE12D41D8FD85700BADB26 /* TTActionSheet.m in Sources */,
 				82F1837B1D8E38C200CF8D7C /* BaseNavigationController.m in Sources */,
 				82F1839E1D8EA10E00CF8D7C /* UIView+TTHUDView.m in Sources */,
 				82F1838F1D8E42D200CF8D7C /* TTTabBarController.m in Sources */,

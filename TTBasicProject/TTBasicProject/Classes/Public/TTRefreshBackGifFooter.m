@@ -25,10 +25,10 @@
     return footer;
 }
 
-- (void)setImages:(NSArray *)images duration:(NSTimeInterval)duration forState:(MJRefreshState)state {
-    
-    [super setImages:images duration:duration forState:state];
-}
+//- (void)setImages:(NSArray *)images duration:(NSTimeInterval)duration forState:(MJRefreshState)state {
+//    
+//    [super setImages:images duration:duration forState:state];
+//}
 - (void)setImages:(NSArray *)images forState:(MJRefreshState)state {
     
     [self setImages:images duration:images.count * 0.3 forState:state];
