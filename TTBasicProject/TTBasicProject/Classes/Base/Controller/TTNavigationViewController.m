@@ -1,19 +1,19 @@
 //
-//  USNavigationViewController.m
+//  TTNavigationViewController.m
 //  TTBasicProject
 //
 //  Created by 赵春浩 on 16/8/29.
 //  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
-#import "USNavigationViewController.h"
+#import "TTNavigationViewController.h"
 #import "UIBarButtonItem+Item.h"
 
-@interface USNavigationViewController ()<UIGestureRecognizerDelegate>
+@interface TTNavigationViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
-@implementation USNavigationViewController
+@implementation TTNavigationViewController
 
 + (void)load {
     

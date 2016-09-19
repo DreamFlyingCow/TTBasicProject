@@ -1,5 +1,5 @@
 //
-//  USTabBar.h
+//  TTNavigationViewController.h
 //  TTBasicProject
 //
 //  Created by 赵春浩 on 16/8/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface USTabBar : UITabBar
+@interface TTNavigationViewController : UINavigationController
 
 @end

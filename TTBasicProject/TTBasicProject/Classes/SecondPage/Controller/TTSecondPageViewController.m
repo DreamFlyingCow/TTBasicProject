@@ -12,6 +12,7 @@
 @interface TTSecondPageViewController ()<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *dataArr;
 
 @end
 
@@ -33,6 +34,22 @@
     
     _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
+        dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
+        dispatch_after(time, dispatch_get_main_queue(), ^{
+            [_tableView reloadData];
+            [_tableView.mj_header endRefreshing];
+        });
+        
+    }];
+    
+    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        
+        dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
+        dispatch_after(time, dispatch_get_main_queue(), ^{
+            [_tableView reloadData];
+            [_tableView.mj_footer endRefreshing];
+        });
+        
     }];
     
     
@@ -40,12 +57,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 0;
+    return _dataArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:0 reuseIdentifier:nil];
+    cell.textLabel.text = @"呵呵";
     
     return cell;
 }
@@ -81,10 +99,15 @@
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button {
     
     [_tableView.mj_header beginRefreshing];
+//    [_tableView.mj_footer beginRefreshing];
+    
+    _dataArr = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
+    
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
     dispatch_after(time, dispatch_get_main_queue(), ^{
-        
+        [_tableView reloadData];
         [_tableView.mj_header endRefreshing];
+//        [_tableView.mj_footer endRefreshing];
     });
     
     

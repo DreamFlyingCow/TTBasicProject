@@ -1,14 +1,14 @@
 //
-//  USTabBarController.m
+//  TTTabBarController.m
 //  TTBasicProject
 //
 //  Created by 赵春浩 on 16/8/29.
 //  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
-#import "USTabBarController.h"
-#import "USTabBar.h"
-#import "USNavigationViewController.h"
+#import "TTTabBarController.h"
+#import "TTTabBar.h"
+#import "TTNavigationViewController.h"
 #import "UIImage+Image.h"
 #import "TTFirstPageViewController.h"
 #import "TTSecondPageViewController.h"
@@ -17,11 +17,11 @@
 #import "TTFifthPageViewController.h"
 
 
-@interface USTabBarController ()
+@interface TTTabBarController ()
 
 @end
 
-@implementation USTabBarController
+@implementation TTTabBarController
 + (void)load {
     // 获取哪个类中UITabBarItem
     UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];
@@ -62,7 +62,7 @@
 #pragma mark - 自定义tabBar
 - (void)setupTabBar {
     
-    USTabBar *tabBar = [[USTabBar alloc] init];
+    TTTabBar *tabBar = [[TTTabBar alloc] init];
     [self setValue:tabBar forKey:@"tabBar"];
 }
 
@@ -71,27 +71,27 @@
     
     // 首页
      TTFirstPageViewController *OneVc = [[TTFirstPageViewController alloc] init];
-    USNavigationViewController *navOne = [[USNavigationViewController alloc] initWithRootViewController:OneVc];
+    TTNavigationViewController *navOne = [[TTNavigationViewController alloc] initWithRootViewController:OneVc];
     [self addChildViewController:navOne];
     
     // 二页
     TTSecondPageViewController *twoVC = [[TTSecondPageViewController alloc] init];
-    USNavigationViewController *navTwo = [[USNavigationViewController alloc] initWithRootViewController:twoVC];
+    TTNavigationViewController *navTwo = [[TTNavigationViewController alloc] initWithRootViewController:twoVC];
     [self addChildViewController:navTwo];
     
     // 三页
     TTThirdPageViewController *threeVC = [[TTThirdPageViewController alloc] init];
-    USNavigationViewController *navThree = [[USNavigationViewController alloc] initWithRootViewController:threeVC];
+    TTNavigationViewController *navThree = [[TTNavigationViewController alloc] initWithRootViewController:threeVC];
     [self addChildViewController:navThree];
     
     // 四页
     TTForthPageViewController *fourVC = [[TTForthPageViewController alloc] init];
-    USNavigationViewController *navFour = [[USNavigationViewController alloc] initWithRootViewController:fourVC];
+    TTNavigationViewController *navFour = [[TTNavigationViewController alloc] initWithRootViewController:fourVC];
     [self addChildViewController:navFour];
     
     // 末页
     TTFifthPageViewController *fiveVC = [[TTFifthPageViewController alloc] init];
-    USNavigationViewController *navFive = [[USNavigationViewController alloc] initWithRootViewController:fiveVC];
+    TTNavigationViewController *navFive = [[TTNavigationViewController alloc] initWithRootViewController:fiveVC];
     [self addChildViewController:navFive];
     
 }

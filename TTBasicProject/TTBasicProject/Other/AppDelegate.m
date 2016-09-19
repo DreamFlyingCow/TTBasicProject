@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TTTabBarViewController.h"
-#import "USTabBarController.h"
+#import "TTTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    USTabBarController *tabVC = [[USTabBarController alloc] init];
+    TTTabBarController *tabVC = [[TTTabBarController alloc] init];
     
 //    TTTabBarViewController *tabVC = [[TTTabBarViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];

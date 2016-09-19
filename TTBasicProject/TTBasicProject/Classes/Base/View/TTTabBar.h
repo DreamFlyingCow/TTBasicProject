@@ -1,5 +1,5 @@
 //
-//  USTabBarController.h
+//  TTTabBar.h
 //  TTBasicProject
 //
 //  Created by 赵春浩 on 16/8/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface USTabBarController : UITabBarController
+@interface TTTabBar : UITabBar
 
 @end

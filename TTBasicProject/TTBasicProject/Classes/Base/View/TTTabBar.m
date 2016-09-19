@@ -1,14 +1,14 @@
 //
-//  USTabBar.m
+//  TTTabBar.m
 //  TTBasicProject
 //
 //  Created by 赵春浩 on 16/8/29.
 //  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
-#import "USTabBar.h"
+#import "TTTabBar.h"
 
-@interface USTabBar ()
+@interface TTTabBar ()
 /**
  *  上一次点击的按钮
  */
@@ -17,7 +17,8 @@
 @end
 
 
-@implementation USTabBar
+@implementation TTTabBar
+
 
 - (void)layoutSubviews {
     
@@ -49,9 +50,7 @@
     }
 }
 
-/**
- *  tabBarButton的点击
- */
+#pragma mark - tabBarButton的点击
 - (void)tabBarButtonClick:(UIControl *)tabBarButton {
     
     self.previousClickedTabBarButton = tabBarButton;
