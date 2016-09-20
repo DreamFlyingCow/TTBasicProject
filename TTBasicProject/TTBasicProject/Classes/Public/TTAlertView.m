@@ -29,12 +29,21 @@
         va_end(_arguments);
     }
     
+    if (cancelButtonTitle == nil && otherButtonTitles == nil) {
+        // 取消按钮可以传nil, 其他按钮也可以传nil, 两个同时为nil时, 提醒框就会显示一秒钟之后就消失
+        dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
+        dispatch_after(time, dispatch_get_main_queue(), ^{
+            
+            [self dismissWithClickedButtonIndex:0 animated:YES];
+        });
+    }
+    
     return self;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
-    _clickedBlock(self, buttonIndex==self.cancelButtonIndex, buttonIndex);
+    _clickedBlock(self, buttonIndex == self.cancelButtonIndex, buttonIndex);
 }
 
 @end

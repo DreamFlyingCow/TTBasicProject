@@ -21,6 +21,7 @@
     
     [super viewDidLoad];
     self.view.backgroundColor = kRandomColor;
+//    self.title = @"CustomRefresh";
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 44 - 64) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     

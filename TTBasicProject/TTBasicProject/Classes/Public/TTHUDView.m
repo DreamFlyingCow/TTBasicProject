@@ -44,9 +44,9 @@ static id _instance;
         HUD.alpha = 0.4;
         [self addSubview:HUD];
         HUD.delegate = self;
-        HUD.labelText = @"加载中...";
+        HUD.label.text = @"加载中...";
     }
-    [HUD show:YES];
+    [HUD showAnimated:YES];
 }
 
 - (void)hudShow:(NSString *)content {
@@ -56,9 +56,9 @@ static id _instance;
         textHUD = [[MBProgressHUD alloc] initWithView:self];
         [self addSubview:textHUD];
         textHUD.delegate = self;
-        textHUD.labelText = content;
+        textHUD.label.text = content;
     }
-    [textHUD show:YES];
+    [textHUD showAnimated:YES];
 }
 
 - (void)hiddleHud {
@@ -85,11 +85,14 @@ static id _instance;
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
     hud.mode = MBProgressHUDModeText;
-    hud.labelText = text;
+    hud.label.text = text;
     hud.margin = 10.f;
-    hud.yOffset = kScreenHeight/2-100;
+    
+    [hud setOffset:CGPointMake(0, kScreenHeight / 2 - 100)];
+//    hud.offset.y = kScreenHeight / 2 - 100;
+//    hud.yOffset = kScreenHeight / 2 - 100;
     hud.removeFromSuperViewOnHide = YES;
-    [hud hide:YES afterDelay:0.8];
+    [hud hideAnimated:YES afterDelay:0.8];
 }
 
 - (void)showHudSuccess:(NSString *)tip {
@@ -108,10 +111,10 @@ static id _instance;
     [self addSubview:t_HUD];
     t_HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:img]];
     t_HUD.mode = MBProgressHUDModeCustomView;
-    t_HUD.labelText = tip;
+    t_HUD.label.text = tip;
     t_HUD.removeFromSuperViewOnHide = YES;
-    [t_HUD show:YES];
-    [t_HUD hide:YES afterDelay:1];
+    [t_HUD showAnimated:YES];
+    [t_HUD hideAnimated:YES afterDelay:1];
 }
 
 #pragma mark MBProgressHUDDelegate methods
