@@ -35,6 +35,13 @@
 #define kSepLineColor                             kColorRGB(0xdfdfdd)
 // 灰色字体颜色
 #define kGrayTextColor                            kColorRGB(0x999999)
+// 拨打电话的按钮颜色
+#define kCallPhoneColor                           kColorRGB(0x66cc99)
+// 发消息的按钮颜色
+#define kSendMesColor                             kColorRGB(0x66cccc)
+// 顾客不可联系按钮颜色
+#define kDisabledColor                            kColorRGB(0xcccccc)
+
 
 
 

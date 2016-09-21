@@ -7,7 +7,10 @@
 //
 
 #import "TTThirdPageViewController.h"
+#import "TTActivityCell.h"
+#import <UITableView+FDTemplateLayoutCell.h>
 
+static NSString *reuseID = @"TTActivityCell";
 @interface TTThirdPageViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
@@ -26,6 +29,8 @@
     
     _tableView.dataSource = self;
     _tableView.delegate = self;
+    [_tableView registerNib:[UINib nibWithNibName:@"TTActivityCell" bundle:nil] forCellReuseIdentifier:reuseID];
+    
     
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     
@@ -48,6 +53,7 @@
     
 }
 
+#pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return 20;
@@ -55,12 +61,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:0 reuseIdentifier:nil];
+    TTActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID forIndexPath:indexPath];
     
-    cell.textLabel.text = @"哈哈";
+    
     
     return cell;
 }
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // 自动计算行高(注意xib的布局)
+    return [tableView fd_heightForCellWithIdentifier:reuseID configuration:^(id cell) {
+        
+    }];
+    
+}
+
 
 
 - (void)loadNewData {

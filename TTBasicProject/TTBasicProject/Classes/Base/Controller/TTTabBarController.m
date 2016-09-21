@@ -71,31 +71,31 @@
     
     // 首页
      TTFirstPageViewController *OneVc = [[TTFirstPageViewController alloc] init];
-    OneVc.title = @"Tips";
+    OneVc.title = @"Tips(So Easy)";
     TTNavigationViewController *navOne = [[TTNavigationViewController alloc] initWithRootViewController:OneVc];
     [self addChildViewController:navOne];
     
     // 二页
     TTSecondPageViewController *twoVC = [[TTSecondPageViewController alloc] init];
-    twoVC.title = @"EmptyData";
+    twoVC.title = @"EmptyData(DZN)";
     TTNavigationViewController *navTwo = [[TTNavigationViewController alloc] initWithRootViewController:twoVC];
     [self addChildViewController:navTwo];
     
     // 三页
     TTThirdPageViewController *threeVC = [[TTThirdPageViewController alloc] init];
-    threeVC.title = @"SystemRefresh";
+    threeVC.title = @"SystemRefresh+AutoCalculateRowHeight";
     TTNavigationViewController *navThree = [[TTNavigationViewController alloc] initWithRootViewController:threeVC];
     [self addChildViewController:navThree];
     
     // 四页
     TTForthPageViewController *fourVC = [[TTForthPageViewController alloc] init];
-    fourVC.title = @"HUD";
+    fourVC.title = @"HUD(MBProgressHUD)";
     TTNavigationViewController *navFour = [[TTNavigationViewController alloc] initWithRootViewController:fourVC];
     [self addChildViewController:navFour];
     
     // 末页
     TTFifthPageViewController *fiveVC = [[TTFifthPageViewController alloc] init];
-    fiveVC.title = @"CustomRefresh";
+    fiveVC.title = @"CustomRefresh+ReplacePhoto+IQ";
     TTNavigationViewController *navFive = [[TTNavigationViewController alloc] initWithRootViewController:fiveVC];
     [self addChildViewController:navFive];
     

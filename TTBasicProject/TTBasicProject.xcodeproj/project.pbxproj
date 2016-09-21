@@ -12,6 +12,12 @@
 		8203DDF01D73D47200B3B7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DDE91D73D47200B3B7F6 /* LaunchScreen.storyboard */; };
 		8203DDF21D73D47200B3B7F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDEC1D73D47200B3B7F6 /* main.m */; };
 		8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203DDF81D73D55C00B3B7F6 /* AppDelegate.m */; };
+		824AD5DD1D925EA200A2DFB9 /* TTActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824AD5DB1D925EA200A2DFB9 /* TTActivityCell.m */; };
+		824AD5DE1D925EA200A2DFB9 /* TTActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824AD5DC1D925EA200A2DFB9 /* TTActivityCell.xib */; };
+		824AD5E11D9270C000A2DFB9 /* TTThreeSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824AD5E01D9270C000A2DFB9 /* TTThreeSpecialCell.m */; };
+		824AD5E51D9270E500A2DFB9 /* TTCustomerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 824AD5E31D9270E500A2DFB9 /* TTCustomerHeaderView.m */; };
+		824AD5E61D9270E500A2DFB9 /* TTCustomerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824AD5E41D9270E500A2DFB9 /* TTCustomerHeaderView.xib */; };
+		824AD61D1D9281BF00A2DFB9 /* UIView+TTDraggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 824AD61C1D9281BF00A2DFB9 /* UIView+TTDraggable.m */; };
 		82F1837B1D8E38C200CF8D7C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183421D8E38C200CF8D7C /* BaseNavigationController.m */; };
 		82F1837C1D8E38C200CF8D7C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183441D8E38C200CF8D7C /* BaseTabBarController.m */; };
 		82F1837D1D8E38C200CF8D7C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183461D8E38C200CF8D7C /* BaseViewController.m */; };
@@ -46,6 +52,16 @@
 		8203DDF71D73D55C00B3B7F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8203DDF81D73D55C00B3B7F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8203DDFF1D73D63E00B3B7F6 /* TTBasicProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBasicProject.pch; sourceTree = "<group>"; };
+		824AD5DA1D925EA200A2DFB9 /* TTActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivityCell.h; sourceTree = "<group>"; };
+		824AD5DB1D925EA200A2DFB9 /* TTActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActivityCell.m; sourceTree = "<group>"; };
+		824AD5DC1D925EA200A2DFB9 /* TTActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTActivityCell.xib; sourceTree = "<group>"; };
+		824AD5DF1D9270C000A2DFB9 /* TTThreeSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThreeSpecialCell.h; sourceTree = "<group>"; };
+		824AD5E01D9270C000A2DFB9 /* TTThreeSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTThreeSpecialCell.m; sourceTree = "<group>"; };
+		824AD5E21D9270E400A2DFB9 /* TTCustomerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCustomerHeaderView.h; sourceTree = "<group>"; };
+		824AD5E31D9270E500A2DFB9 /* TTCustomerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCustomerHeaderView.m; sourceTree = "<group>"; };
+		824AD5E41D9270E500A2DFB9 /* TTCustomerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTCustomerHeaderView.xib; sourceTree = "<group>"; };
+		824AD61B1D9281BF00A2DFB9 /* UIView+TTDraggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTDraggable.h"; sourceTree = "<group>"; };
+		824AD61C1D9281BF00A2DFB9 /* UIView+TTDraggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTDraggable.m"; sourceTree = "<group>"; };
 		82F183411D8E38C200CF8D7C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		82F183421D8E38C200CF8D7C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		82F183431D8E38C200CF8D7C /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -155,6 +171,15 @@
 				8203DDFF1D73D63E00B3B7F6 /* TTBasicProject.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		824AD61A1D9281BF00A2DFB9 /* TTDraggableView */ = {
+			isa = PBXGroup;
+			children = (
+				824AD61B1D9281BF00A2DFB9 /* UIView+TTDraggable.h */,
+				824AD61C1D9281BF00A2DFB9 /* UIView+TTDraggable.m */,
+			);
+			path = TTDraggableView;
 			sourceTree = "<group>";
 		};
 		82F1833E1D8E38C200CF8D7C /* Classes */ = {
@@ -292,6 +317,12 @@
 		82F183561D8E38C200CF8D7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				824AD61A1D9281BF00A2DFB9 /* TTDraggableView */,
+				824AD5DF1D9270C000A2DFB9 /* TTThreeSpecialCell.h */,
+				824AD5E01D9270C000A2DFB9 /* TTThreeSpecialCell.m */,
+				824AD5E21D9270E400A2DFB9 /* TTCustomerHeaderView.h */,
+				824AD5E31D9270E500A2DFB9 /* TTCustomerHeaderView.m */,
+				824AD5E41D9270E500A2DFB9 /* TTCustomerHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -526,6 +557,9 @@
 		82F1837A1D8E38C200CF8D7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				824AD5DA1D925EA200A2DFB9 /* TTActivityCell.h */,
+				824AD5DB1D925EA200A2DFB9 /* TTActivityCell.m */,
+				824AD5DC1D925EA200A2DFB9 /* TTActivityCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -600,8 +634,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824AD5E61D9270E500A2DFB9 /* TTCustomerHeaderView.xib in Resources */,
 				8203DDEF1D73D47200B3B7F6 /* Assets.xcassets in Resources */,
 				8203DDF01D73D47200B3B7F6 /* LaunchScreen.storyboard in Resources */,
+				824AD5DE1D925EA200A2DFB9 /* TTActivityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82F183891D8E42C500CF8D7C /* TTTabBar.m in Sources */,
+				824AD5E11D9270C000A2DFB9 /* TTThreeSpecialCell.m in Sources */,
 				82F1837F1D8E38C200CF8D7C /* UIViewExt.m in Sources */,
 				82F1837C1D8E38C200CF8D7C /* BaseTabBarController.m in Sources */,
 				82F183811D8E38C200CF8D7C /* TTForthPageViewController.m in Sources */,
@@ -675,6 +712,9 @@
 				82FE12CE1D8FBD0D00BADB26 /* TTRefreshBackGifFooter.m in Sources */,
 				82F183921D8E437C00CF8D7C /* UIImage+Image.m in Sources */,
 				82F183A11D8EA6F200CF8D7C /* UIView+Image.m in Sources */,
+				824AD61D1D9281BF00A2DFB9 /* UIView+TTDraggable.m in Sources */,
+				824AD5E51D9270E500A2DFB9 /* TTCustomerHeaderView.m in Sources */,
+				824AD5DD1D925EA200A2DFB9 /* TTActivityCell.m in Sources */,
 				82F1837E1D8E38C200CF8D7C /* TTTabBarViewController.m in Sources */,
 				82FE12D11D8FD6E200BADB26 /* TTAlertView.m in Sources */,
 				8203DDF21D73D47200B3B7F6 /* main.m in Sources */,

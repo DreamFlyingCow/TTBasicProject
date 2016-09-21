@@ -21,7 +21,7 @@
     
     // 设置导航条标题 => UINavigationBar
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:17];
     
     attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     [navBar setTitleTextAttributes:attrs];

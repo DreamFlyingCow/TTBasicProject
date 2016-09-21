@@ -102,23 +102,19 @@
 //    return [UIImage imageNamed:@"404_customer"];
 //}
 //
-//// 这个属性可以设置也可以不设置
-//- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
-//    
-//    NSString *text = @"这个页面无数据";
-//    
-//    NSDictionary *attributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0f], NSForegroundColorAttributeName:[UIColor darkGrayColor]};
-//    
-//    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
-//}
+// 这个属性可以设置也可以不设置
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    
+    NSString *text = @"点击头像刷新, 有数据源的时候上拉移除数据源";
+    
+    NSDictionary *attributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0f], NSForegroundColorAttributeName:[UIColor darkGrayColor]};
+    
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+}
 
 
 #pragma mark - 下边的这两个方法要一个是添加按钮, 一个是处理点击事件(可以直接设置这两个方法, 点击图片就会进行刷新)
 - (UIImage *)buttonImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
-    
-//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-//    
-//    return [btn buttonImageFromColor:kRandomColor];
     
     return [UIImage imageNamed:@"404_customer"];
 }
