@@ -9,6 +9,7 @@
 #import "TTFirstPageViewController.h"
 #import "TTAlertView.h"
 #import "TTActionSheet.h"
+#import "TTJumpPageViewController.h"
 
 @interface TTFirstPageViewController ()
 
@@ -94,9 +95,7 @@
 
 - (void)jumpBtnClick:(UIButton *)btn {
     
-    BaseViewController *VC = [[BaseViewController alloc] init];
-    VC.view.backgroundColor = kRandomColor;
-    VC.title = @"跳转页";
+    TTJumpPageViewController *VC = [[TTJumpPageViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 

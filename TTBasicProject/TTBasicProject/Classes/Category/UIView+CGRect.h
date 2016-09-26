@@ -1,8 +1,8 @@
 //
-//  UIViewExt.h
+//  UIView+CGRect.h
 //  TTBasicProject
 //
-//  Created by 赵春浩 on 16/8/29.
+//  Created by 赵春浩 on 16/9/26.
 //  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 CGPoint CGRectGetCenter(CGRect rect);
 CGRect  CGRectMoveToCenter(CGRect rect, CGPoint center);
 
-@interface UIView (ViewFrameGeometry)
+@interface UIView (CGRect)
 
 @property CGPoint origin;
 @property CGSize size;
@@ -32,5 +32,6 @@ CGRect  CGRectMoveToCenter(CGRect rect, CGPoint center);
 - (void)moveBy:(CGPoint)delta;
 - (void)scaleBy:(CGFloat)scaleFactor;
 - (void)fitInSize:(CGSize)aSize;
+
 
 @end

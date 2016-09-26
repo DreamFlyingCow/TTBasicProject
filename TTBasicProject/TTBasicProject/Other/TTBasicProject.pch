@@ -22,7 +22,7 @@
 #import "Frame.h"
 #import "Color.h"
 #import "MJRefresh.h"
-#import "UIViewExt.h"
+#import "UIView+CGRect.h"
 #import "TTHUDView.h"
 
 

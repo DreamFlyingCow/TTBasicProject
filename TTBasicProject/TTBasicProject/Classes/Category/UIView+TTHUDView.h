@@ -11,9 +11,12 @@
 @interface UIView (TTHUDView)<MBProgressHUDDelegate>
 
 - (void)hudShow;
-- (void)hudShow:(NSString *)content;
 - (void)hiddleHud;
+
+- (void)hudShow:(NSString *)content;
 - (void)textHUDHiddle;
+
+// 下边的HUD都是会自动消失的
 - (void)hudShowWithText:(NSString *)text;
 - (void)showHudSuccess:(NSString *)tip;
 - (void)showHudFailed:(NSString *)tip;
