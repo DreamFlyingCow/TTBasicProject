@@ -8,38 +8,65 @@
 
 #import "UITextView+PlaceHolder.h"
 
-static UITextView *_placeHolderTextView;
+static const char *phTextView = "placeHolderTextView";
+static id<UITextViewPlaceHolderDelegate> _placeHolderDelegate;
 @implementation UITextView (PlaceHolder)
+
+- (id<UITextViewPlaceHolderDelegate>)placeHolderDelegate {
+    
+    return objc_getAssociatedObject(self, (__bridge const void *)(_placeHolderDelegate));
+}
+
+- (void)setPlaceHolderDelegate:(id<UITextViewPlaceHolderDelegate>)placeHolderDelegate {
+    
+    objc_setAssociatedObject(self, (__bridge const void *)(_placeHolderDelegate), placeHolderDelegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 
 - (UITextView *)placeHolderTextView {
     
-    return objc_getAssociatedObject(self, (__bridge const void *)(_placeHolderTextView));
+    return objc_getAssociatedObject(self, phTextView);
 }
 
 - (void)setPlaceHolderTextView:(UITextView *)placeHolderTextView {
     
-    objc_setAssociatedObject(self, (__bridge const void *)(_placeHolderTextView), placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, phTextView, placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)addPlaceHolder:(NSString *)placeHolder {
     
     if (![self placeHolderTextView]) {
         
+        // 添加观察者(注册监听)
+        [self addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:nil];
         self.delegate = self;
-        _placeHolderTextView = [[UITextView alloc] initWithFrame:self.bounds];
-        _placeHolderTextView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        _placeHolderTextView.font = self.font;
-        _placeHolderTextView.backgroundColor = [UIColor clearColor];
-        _placeHolderTextView.textColor = [UIColor grayColor];
-        _placeHolderTextView.userInteractionEnabled = NO;
-        _placeHolderTextView.text = placeHolder;
-        [self addSubview:_placeHolderTextView];
-        [self setPlaceHolderTextView:_placeHolderTextView];
+        UITextView *textView = [[UITextView alloc] initWithFrame:self.bounds];
+        textView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        textView.font = self.font;
+        textView.backgroundColor = [UIColor clearColor];
+        textView.textColor = [UIColor grayColor];
+        textView.userInteractionEnabled = NO;
+        textView.text = placeHolder;
+        [self addSubview:textView];
+        [self setPlaceHolderTextView:textView];
     }
 }
 
+//处理属性改变事件
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    
+    if (((UITextView *)object).text.length > 0) {
+        
+        self.placeHolderTextView.hidden = YES;
+    } else {
+        
+        self.placeHolderTextView.hidden = NO;
+    }
+}
+
+
 # pragma mark - UITextViewDelegate
-- (void)textViewDidChange:(UITextView *)textView {
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
     
     if (textView.text.length > 0) {
         
@@ -47,6 +74,15 @@ static UITextView *_placeHolderTextView;
     } else {
         
         self.placeHolderTextView.hidden = NO;
+    }
+    return YES;
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    
+    if ([self.placeHolderDelegate respondsToSelector:@selector(finishInputTextWithString:)]) {
+        
+        [self.placeHolderDelegate finishInputTextWithString:textView.text];
     }
 }
 

@@ -8,8 +8,9 @@
 
 #import "TTJumpPageViewController.h"
 #import "UITextView+PlaceHolder.h"
+#import "NSString+StringColor.h"
 
-@interface TTJumpPageViewController ()
+@interface TTJumpPageViewController ()<UITextViewPlaceHolderDelegate>
 
 @end
 
@@ -35,8 +36,18 @@
     UITextView *TF = [[UITextView alloc] initWithFrame:CGRectMake(50, 200, 200, 200)];
     TF.layer.cornerRadius = 5;
     TF.layer.masksToBounds = YES;
+    TF.placeHolderDelegate = self;
     [TF addPlaceHolder:@"请输入占位符"];
+    TF.text = @"哈哈哈哈哈哈哈哈哈哈哈哈";
+//    [TF.text addStringWithDifferentColor:[UIColor greenColor] withRange:NSMakeRange(1, 2)];
     [self.view addSubview:TF];
+//    [TF becomeFirstResponder];
+}
+
+
+- (void)finishInputTextWithString:(NSString *)string {
+    
+    [string addStringWithDifferentColor:[UIColor greenColor] withRange:NSMakeRange(1, 2)];
 }
 
 

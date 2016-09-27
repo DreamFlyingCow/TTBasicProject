@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// 此分类就是给一个View添加一个手势, 可以随意拖动, 松手之后回到原位置
 @interface UIView (TTDraggable)
 
 /**

@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
+//@class UITextView;
+
+@protocol UITextViewPlaceHolderDelegate <NSObject>
+
+@optional
+- (void)finishInputTextWithString:(NSString *)string;
+
+@end
+
 
 @interface UITextView (PlaceHolder) <UITextViewDelegate>
+
+@property (weak, nonatomic) id<UITextViewPlaceHolderDelegate> placeHolderDelegate;
 
 // 设置占位字符串
 - (void)addPlaceHolder:(NSString *)placeHolder;
