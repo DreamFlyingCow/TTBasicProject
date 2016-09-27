@@ -21,7 +21,6 @@
     
     [super viewDidLoad];
     self.view.backgroundColor = kColorRGB(0x623456);
-//    self.title = @"Tips";
     [self addSubviews];
 }
 
@@ -30,6 +29,8 @@
     
     UIButton *alertViewBtn = [[UIButton alloc] init];
     [alertViewBtn setBackgroundColor:kRandomColor];
+    alertViewBtn.layer.cornerRadius = 5;
+    alertViewBtn.layer.masksToBounds = YES;
     [alertViewBtn setTitle:@"Alert" forState:UIControlStateNormal];
     [alertViewBtn addTarget:self action:@selector(alertViewBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:alertViewBtn];
@@ -41,6 +42,8 @@
     
     UIButton *actionSheetBtn = [[UIButton alloc] init];
     [actionSheetBtn setBackgroundColor:kRandomColor];
+    actionSheetBtn.layer.cornerRadius = 5;
+    actionSheetBtn.layer.masksToBounds = YES;
     [actionSheetBtn setTitle:@"Action" forState:UIControlStateNormal];
     [actionSheetBtn addTarget:self action:@selector(actionSheetBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:actionSheetBtn];
@@ -52,6 +55,8 @@
     
     UIButton *jumpBtn = [[UIButton alloc] init];
     [jumpBtn setBackgroundColor:kRandomColor];
+    jumpBtn.layer.cornerRadius = 5;
+    jumpBtn.layer.masksToBounds = YES;
     [jumpBtn setTitle:@"Jump" forState:UIControlStateNormal];
     [jumpBtn addTarget:self action:@selector(jumpBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:jumpBtn];

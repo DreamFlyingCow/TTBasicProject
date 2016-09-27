@@ -23,7 +23,6 @@ static NSString *reuseID = @"TTActivityCell";
     
     [super viewDidLoad];
     self.view.backgroundColor = kRandomColor;
-//    self.title = @"SystemRefresh";
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 44 - 64) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     
@@ -31,26 +30,15 @@ static NSString *reuseID = @"TTActivityCell";
     _tableView.delegate = self;
     [_tableView registerNib:[UINib nibWithNibName:@"TTActivityCell" bundle:nil] forCellReuseIdentifier:reuseID];
     
-    
+    // 设置MJGif系统动画刷新
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     
-//    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
-//        NSLog(@"11111");
-//    }];
-    
-    
     NSArray *images = [NSArray arrayWithObjects:[UIImage  imageNamed:@"loading_3"], [UIImage  imageNamed:@"loading_4"], [UIImage  imageNamed:@"loading_5"], nil];
-    
     [header setImages:@[[UIImage  imageNamed:@"loading_1"]] forState:MJRefreshStateIdle];
-    
     [header setImages:@[[UIImage  imageNamed:@"loading_2"]] forState:MJRefreshStatePulling];
-    
     [header setImages:images forState:MJRefreshStateRefreshing];
     
-    
     self.tableView.mj_header = header;
-    
-    
 }
 
 #pragma mark - UITableViewDataSource
@@ -62,8 +50,7 @@ static NSString *reuseID = @"TTActivityCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     TTActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID forIndexPath:indexPath];
-    
-    
+    // 在这里处理数据源
     
     return cell;
 }
@@ -73,13 +60,11 @@ static NSString *reuseID = @"TTActivityCell";
     
     // 自动计算行高(注意xib的布局)
     return [tableView fd_heightForCellWithIdentifier:reuseID configuration:^(id cell) {
-        
+        // 在这里处理数据源
     }];
-    
 }
 
-
-
+// 模拟数据加载
 - (void)loadNewData {
     
     NSLog(@"呵呵");
@@ -89,11 +74,7 @@ static NSString *reuseID = @"TTActivityCell";
         
         [_tableView.mj_header endRefreshing];
     });
-    
-    
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     

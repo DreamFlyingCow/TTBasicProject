@@ -13,6 +13,15 @@ static id<UITextViewPlaceHolderDelegate> _placeHolderDelegate;
 
 @implementation UITextView (PlaceHolder)
 
+#pragma mark - 这两个方法是为了处理一个控制台错误
+- (void)_firstBaselineOffsetFromTop {
+    
+}
+
+- (void)_baselineOffsetFromBottom {
+    
+}
+
 #pragma mark - 运行时处理分类中属性的getter以及setter方法
 - (id<UITextViewPlaceHolderDelegate>)placeHolderDelegate {
     
@@ -65,7 +74,6 @@ static id<UITextViewPlaceHolderDelegate> _placeHolderDelegate;
         self.placeHolderTextView.hidden = NO;
     }
 }
-
 
 # pragma mark - UITextViewDelegate
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView {

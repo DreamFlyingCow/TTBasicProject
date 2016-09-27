@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
-//@class UITextView;
 
 @protocol UITextViewPlaceHolderDelegate <NSObject>
 
@@ -20,6 +19,7 @@
 
 @interface UITextView (PlaceHolder) <UITextViewDelegate>
 
+// 用来处理输入完成的代理
 @property (weak, nonatomic) id<UITextViewPlaceHolderDelegate> placeHolderDelegate;
 
 // 设置占位字符串

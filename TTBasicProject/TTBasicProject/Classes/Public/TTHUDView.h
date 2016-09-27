@@ -10,8 +10,6 @@
 
 @interface TTHUDView : UIView
 
-//+ (instancetype)sharedHUDView;
-
 - (void)hudShow;
 - (void)hudShow:(NSString *)content;
 - (void)hiddleHud;
@@ -20,6 +18,5 @@
 - (void)showHudSuccess:(NSString *)tip;
 - (void)showHudFailed:(NSString *)tip;
 - (void)showHud:(NSString *)tip andImg:(NSString *)img;
-
 
 @end

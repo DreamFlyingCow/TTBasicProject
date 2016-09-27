@@ -12,6 +12,8 @@
 
 @interface TTJumpPageViewController ()<UITextViewPlaceHolderDelegate>
 
+@property (strong, nonatomic) UITextView *TF;
+
 @end
 
 @implementation TTJumpPageViewController
@@ -33,21 +35,21 @@
 
 - (void)addSubViews {
     
-    UITextView *TF = [[UITextView alloc] initWithFrame:CGRectMake(50, 200, 200, 200)];
-    TF.layer.cornerRadius = 5;
-    TF.layer.masksToBounds = YES;
-    TF.placeHolderDelegate = self;
-    [TF addPlaceHolder:@"请输入占位符"];
-    TF.text = @"哈哈哈哈哈哈哈哈哈哈哈哈";
-//    [TF.text addStringWithDifferentColor:[UIColor greenColor] withRange:NSMakeRange(1, 2)];
-    [self.view addSubview:TF];
-//    [TF becomeFirstResponder];
+    _TF = [[UITextView alloc] initWithFrame:CGRectMake(50, 200, 200, 200)];
+    _TF.layer.cornerRadius = 5;
+    _TF.layer.masksToBounds = YES;
+    _TF.placeHolderDelegate = self;
+    [_TF addPlaceHolder:@"请输入占位符"];
+    _TF.text = @"哈哈哈哈哈哈哈哈哈哈哈哈";
+    
+    [self.view addSubview:_TF];
 }
 
 
 - (void)finishInputTextWithString:(NSString *)string {
     
-    [string addStringWithDifferentColor:[UIColor greenColor] withRange:NSMakeRange(1, 2)];
+    // 利用分类对textView的text进行染色
+    _TF.attributedText = [string addStringWithDifferentColor:[UIColor greenColor] withRange:NSMakeRange(0, string.length)];
 }
 
 

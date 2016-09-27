@@ -41,6 +41,7 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    // 设置键盘自动处理
     [IQKeyboardManager sharedManager].enable = YES;
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
     
@@ -49,7 +50,6 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
     [self addTableView];
     [self addRightItem];
     [self initPickerView];
@@ -129,6 +129,12 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
     saveBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -20);
     [saveBtn addTarget:self action:@selector(didClickSaveBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:saveBtn];
+}
+
+#pragma mark - 保存按钮的点击事件
+- (void)didClickSaveBtn:(UIButton *)btn {
+    
+    NSLog(@"%s", __FUNCTION__);
 }
 
 #pragma mark - UITableViewDataSource
@@ -212,7 +218,6 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
             }];
             
             [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-            
         }
         
         self.pickerView.hidden = NO;
@@ -274,7 +279,7 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
     
 }
 
-#pragma mark - pickerView
+#pragma mark - pickerViewDataSource
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
     return 1;
@@ -297,6 +302,7 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
     }
 }
 
+#pragma mark - pickerViewDelegate
 // 返回选中的行
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
@@ -312,17 +318,12 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
     sexCell.mesLabel.textColor = [UIColor blackColor];
 }
 
-#pragma mark - 保存按钮的点击事件
-- (void)didClickSaveBtn:(UIButton *)btn {
-    
-    NSLog(@"%s", __FUNCTION__);
-}
-
 #pragma mark - 换头像
 - (void)didClickIconView:(UITapGestureRecognizer *)tap {
     
-    
+    // 先结束页面的编辑状态
     [self.view endEditing:YES];
+    
     if (!self.pickerView.hidden || !self.datePicker.hidden) {
         
         [UIView animateWithDuration:0.25 animations:^{
@@ -363,7 +364,7 @@ static NSString *reuseIDLabel = @"TTTextFieldCellLabel";
     }
 }
 
-// PickerImage完成后的代理方法
+#pragma mark - PickerImage完成后的代理方法
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
     //获取我们选择的图片

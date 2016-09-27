@@ -23,7 +23,6 @@
  */
 @property (nonatomic, assign) NSInteger cancelButtonIndex;
 
-
 - (id)initWithTitles:(NSArray *)titles;
 /**
  *  获取按钮的index

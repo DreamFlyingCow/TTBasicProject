@@ -8,32 +8,18 @@
 
 #import "TTHUDView.h"
 
-#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+
 static id _instance;
 @interface TTHUDView ()<MBProgressHUDDelegate>
 
 @end
-
 
 @implementation TTHUDView {
     
     MBProgressHUD *HUD;
     MBProgressHUD *textHUD;
 }
-
-//#pragma mark - 设置单例对象
-//+ (instancetype)sharedHUDView {
-//    
-//    if (_instance == nil) {
-//        static dispatch_once_t onceToken;
-//        dispatch_once(&onceToken, ^{
-//            _instance = [[TTHUDView alloc] init];
-//        });
-//    }
-//    return _instance;
-//}
-
-
 
 #pragma mark -  HUD(工具类)
 - (void)hudShow {
@@ -89,8 +75,6 @@ static id _instance;
     hud.margin = 10.f;
     
     [hud setOffset:CGPointMake(0, kScreenHeight / 2 - 100)];
-//    hud.offset.y = kScreenHeight / 2 - 100;
-//    hud.yOffset = kScreenHeight / 2 - 100;
     hud.removeFromSuperViewOnHide = YES;
     [hud hideAnimated:YES afterDelay:0.8];
 }

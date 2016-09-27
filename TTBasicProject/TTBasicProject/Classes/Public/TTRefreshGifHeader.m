@@ -8,39 +8,7 @@
 
 #import "TTRefreshGifHeader.h"
 
-//static id _refreshInstance;
-@interface TTRefreshGifHeader ()
-
-//@property (copy, nonatomic) RefreshBlcok refreshBlock;
-
-@end
-
-
 @implementation TTRefreshGifHeader
-
-
-//+ (instancetype)sharedRefreshGifHeaderWithRefreshBlock:(RefreshBlcok)refreshBlock {
-//    
-//    if (_refreshInstance == nil) {
-//        static dispatch_once_t onceToken;
-//        dispatch_once(&onceToken, ^{
-//            _refreshInstance = [TTRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
-//            
-//            
-//            NSArray *images = [NSArray arrayWithObjects:[UIImage imageNamed:@"loading_3"], [UIImage imageNamed:@"loading_4"], [UIImage imageNamed:@"loading_5"], nil];
-//            
-//            [_refreshInstance setImages:@[[UIImage imageNamed:@"loading_1"]] forState:MJRefreshStateIdle];
-//            
-//            [_refreshInstance setImages:@[[UIImage imageNamed:@"loading_2"]] forState:MJRefreshStatePulling];
-//            
-//            [_refreshInstance setImages:images forState:MJRefreshStateRefreshing];
-//        });
-//    }
-//    
-//    ((TTRefreshGifHeader *)_refreshInstance).refreshBlock = refreshBlock;
-//    return _refreshInstance;
-//}
-
 
 + (instancetype)headerWithRefreshingBlock:(MJRefreshComponentRefreshingBlock)refreshingBlock {
     
@@ -60,15 +28,6 @@
     
     [self setImages:images duration:images.count * 0.3 forState:state];
 }
-
-//- (void)loadNewData {
-//    
-//    NSLog(@"%s", __FUNCTION__);
-//    if (self.refreshBlock) {
-//        self.refreshBlock;
-//    }
-//    
-//}
 
 
 

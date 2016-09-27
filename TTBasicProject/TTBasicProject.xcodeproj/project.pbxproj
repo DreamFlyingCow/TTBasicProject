@@ -23,6 +23,7 @@
 		826596EA1D99263700058779 /* UIView+TTDraggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 826596E91D99263700058779 /* UIView+TTDraggable.m */; };
 		826596ED1D99267500058779 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 826596EC1D99267500058779 /* NSString+Size.m */; };
 		826596F01D99274200058779 /* NSString+StringColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 826596EF1D99274200058779 /* NSString+StringColor.m */; };
+		826596F31D9A529A00058779 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826596F21D9A529A00058779 /* TTLoginViewController.m */; };
 		82F1837B1D8E38C200CF8D7C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183421D8E38C200CF8D7C /* BaseNavigationController.m */; };
 		82F1837C1D8E38C200CF8D7C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183441D8E38C200CF8D7C /* BaseTabBarController.m */; };
 		82F1837D1D8E38C200CF8D7C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F183461D8E38C200CF8D7C /* BaseViewController.m */; };
@@ -76,6 +77,8 @@
 		826596EC1D99267500058779 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		826596EE1D99274200058779 /* NSString+StringColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringColor.h"; sourceTree = "<group>"; };
 		826596EF1D99274200058779 /* NSString+StringColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringColor.m"; sourceTree = "<group>"; };
+		826596F11D9A529A00058779 /* TTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewController.h; sourceTree = "<group>"; };
+		826596F21D9A529A00058779 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
 		82F183411D8E38C200CF8D7C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		82F183421D8E38C200CF8D7C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		82F183431D8E38C200CF8D7C /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -435,6 +438,8 @@
 		82F183661D8E38C200CF8D7C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				826596F11D9A529A00058779 /* TTLoginViewController.h */,
+				826596F21D9A529A00058779 /* TTLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -732,6 +737,7 @@
 				826596F01D99274200058779 /* NSString+StringColor.m in Sources */,
 				82FE12D11D8FD6E200BADB26 /* TTAlertView.m in Sources */,
 				8203DDF21D73D47200B3B7F6 /* main.m in Sources */,
+				826596F31D9A529A00058779 /* TTLoginViewController.m in Sources */,
 				8203DDF91D73D55C00B3B7F6 /* AppDelegate.m in Sources */,
 				82FE12D41D8FD85700BADB26 /* TTActionSheet.m in Sources */,
 				82F1837B1D8E38C200CF8D7C /* BaseNavigationController.m in Sources */,

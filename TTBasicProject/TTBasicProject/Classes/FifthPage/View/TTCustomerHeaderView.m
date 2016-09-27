@@ -1,9 +1,9 @@
 //
-//  USTCustomerHeaderView.m
-//  UnicornSeller
+//  TTCustomerHeaderView.m
+//  TTBasicProject
 //
-//  Created by 赵春浩 on 16/9/7.
-//  Copyright © 2016年 Unicorn. All rights reserved.
+//  Created by 赵春浩 on 16/9/18.
+//  Copyright © 2016年 Mr Zhao. All rights reserved.
 //
 
 #import "TTCustomerHeaderView.h"

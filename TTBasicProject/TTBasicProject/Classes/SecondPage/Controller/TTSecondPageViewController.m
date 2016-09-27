@@ -23,7 +23,6 @@
     
     [super viewDidLoad];
     self.view.backgroundColor = kRandomColor;
-//    self.title = @"EmptyData";
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 44 - 64) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     
@@ -60,20 +59,6 @@
         });
     }];
     
-    
-//    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-//        
-//        dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
-//        dispatch_after(time, dispatch_get_main_queue(), ^{
-//            
-//            _dataArr = nil;
-//            [_tableView reloadData];
-//            [_tableView.mj_footer endRefreshing];
-//        });
-//        
-//    }];
-    
-    
 }
 
 
@@ -90,8 +75,6 @@
     
     return cell;
 }
-
-
 
 
 
@@ -122,15 +105,12 @@
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button {
     
     [_tableView.mj_header beginRefreshing];
-//    [_tableView.mj_footer beginRefreshing];
-    
     _dataArr = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
     
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
     dispatch_after(time, dispatch_get_main_queue(), ^{
         [_tableView reloadData];
         [_tableView.mj_header endRefreshing];
-//        [_tableView.mj_footer endRefreshing];
     });
     
     NSLog(@"哈哈");

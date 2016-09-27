@@ -22,25 +22,24 @@
 // 只需要传入一个6位数的颜色值(c: 0x000000)
 #define    kColorRGB(c)                           [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 
-
 // 随机色
 #define    kRandomColor                           [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]
 
 
 // 主题色
-#define kMainThemeColor                           kColorRGB(0x336699)
+#define    kMainThemeColor                        kColorRGB(0x336699)
 // 背景色
-#define kBackgroundColor                          kColorRGB(0xf0f0f0)
+#define    kBackgroundColor                       kColorRGB(0xf0f0f0)
 // 分割线
-#define kSepLineColor                             kColorRGB(0xdfdfdd)
+#define    kSepLineColor                          kColorRGB(0xdfdfdd)
 // 灰色字体颜色
-#define kGrayTextColor                            kColorRGB(0x999999)
+#define    kGrayTextColor                         kColorRGB(0x999999)
 // 拨打电话的按钮颜色
-#define kCallPhoneColor                           kColorRGB(0x66cc99)
+#define    kCallPhoneColor                        kColorRGB(0x66cc99)
 // 发消息的按钮颜色
-#define kSendMesColor                             kColorRGB(0x66cccc)
+#define    kSendMesColor                          kColorRGB(0x66cccc)
 // 顾客不可联系按钮颜色
-#define kDisabledColor                            kColorRGB(0xcccccc)
+#define    kDisabledColor                         kColorRGB(0xcccccc)
 
 
 
